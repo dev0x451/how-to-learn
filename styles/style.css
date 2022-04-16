@@ -7,6 +7,8 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  /*рамка вокруг page , потом удалить*/
+  /*border: 4px solid red;*/
 }
 
 .header {
@@ -14,12 +16,93 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  position: relative;
+
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__title {
+  width: 730px;
+  margin: 0 0 0 64px;
+  color: #000;
+  font-size: 102px;
+  font-weight: 700;
+  line-height: 96px;
+  z-index: 3;
+
+}
+
+.header__subtitle {
+  position: absolute;
+  margin: 0;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+  font-size: 18px;
+  font-weight: normal; /*проверить!*/
+  line-height: 25px;
+  z-index: 3;
+
+
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__link::after {
+  content: " \2192";
+}
+
+.header__main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 765px;
+  height: 608px;
+}
+
 .header__square-pic {
+  position: absolute;
+  right: 0;
+  top: 64px;
+  z-index: 1;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+}
+
+/*стили для логотипа*/
+.logo {
+  width: 228px;
+  height: 32px;
+
+}
+
+/*логотип в шапке*/
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 3;
+
+}
+
+/*логотип в футере*/
+.logo_place_footer {
+
+
+
+}
+
+
+/*стили для основной части сайта*/
+.content {
+
 }
 
 /* и элемента с модификатором вида ключ-значение */
