@@ -260,12 +260,6 @@
   position: relative;
 }
 
-
-.table__cell_theme_dark {
-  width: 200px;
-  margin-top: 80px;
-}
-
 .table__heading_theme_dark {
   color: white;
 }
