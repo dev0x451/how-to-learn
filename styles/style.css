@@ -15,12 +15,10 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
   position: relative;
-
 }
 
 .header__title {
@@ -31,7 +29,6 @@
   font-weight: 700;
   line-height: 96px;
   z-index: 3;
-
 }
 
 .header__subtitle {
@@ -45,8 +42,6 @@
   /*проверить!*/
   line-height: 25px;
   z-index: 3;
-
-
 }
 
 .header__link {
@@ -77,14 +72,12 @@
   background-color: #2f80ed;
 }
 
-/*стили для логотипа*/
 .logo {
   width: 228px;
   height: 32px;
-
+  display: block;
 }
 
-/*логотип в шапке*/
 .logo_place_header {
   position: absolute;
   top: 30px;
@@ -92,13 +85,6 @@
   z-index: 3;
 
 }
-
-/*логотип в футере*/
-.logo_place_footer {}
-
-
-/*стили для основной части сайта*/
-.content {}
 
 .description {
   margin-top: 100px;
@@ -126,7 +112,6 @@
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
-
 }
 
 .two-columns__paragraph {
@@ -143,8 +128,6 @@
   line-height: 34px;
 }
 
-
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -153,8 +136,7 @@
 }
 
 .digits {
-  margin-top: 100px;
-
+  padding: 100px 0;
 }
 
 .section-title {
@@ -164,7 +146,6 @@
   line-height: 1.15;
   font-weight: 700;
   text-align: center;
-
 }
 
 .section-subtitle {
@@ -174,18 +155,14 @@
   line-height: 34px;
   font-weight: normal;
   text-align: center;
-
-
 }
 
 .table {
   width: 1100px;
-  margin: 0 auto 100px;
-
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .table__cell {
@@ -201,13 +178,159 @@
 }
 
 .table__text {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
   margin: 0;
-
 }
 
 .table__text:last-of-type {
   margin-top: 20px;
+}
+
+.feynman {
+  background-color: #f2f2f2;
+  height: 890px;
+  background-image: url(../images/feynman.png);
+  background-repeat: no-repeat;
+  background-position: left bottom 0;
+  background-size: 867px 637px;
+  padding-top: 100px;
+  position: relative;
+}
+
+.feynman__title {
+  width: 648px;
+  text-align: center;
+  margin: 0 auto 70px;
+  font-size: 120px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.feynman__subtitle {
+  margin: 70px auto;
+  text-align: center;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  color: #2f80ed;
+  text-decoration: none;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+}
+
+.feynman__link::after {
+  content: " \2192";
+}
+
+.kaufman {
+  background-color: #1f1f1f;
+  padding: 90px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  right: -210px;
+  z-index: 1;
+}
+
+.section-title_theme_dark {
+  color: white;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+}
+
+.table_theme_dark {
+  z-index: 2;
+  position: relative;
+}
+
+
+.table__cell_theme_dark {
+  width: 200px;
+  margin-top: 80px;
+}
+
+.table__heading_theme_dark {
+  color: white;
+}
+
+.table__text_theme_dark {
+  color: white;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  min-height: 350px;
+  padding: 60px 0 40px;
+}
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  min-height: 250px;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  color: white;
+}
+
+.footer__column-heading {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer__column-links {
+  margin: 20px 0 16px;
+}
+
+.footer__column-link {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.footer__column_content_info {}
+
+.footer__column_content_social {}
+
+.footer__social-icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.logo_place_footer {}
+
+.footer__author {
+  margin: 18px 0;
 }
