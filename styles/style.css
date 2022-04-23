@@ -234,6 +234,7 @@
   right: -210px;
   z-index: 1;
   background-image: url(../images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
 }
 
 .section-title_theme_dark {
@@ -284,8 +285,6 @@
   margin: 0 auto;
 }
 
-.footer__column {}
-
 .footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
@@ -321,17 +320,11 @@
   display: block;
 }
 
-.footer__column_content_info {}
-
-.footer__column_content_social {}
-
 .footer__social-icon {
   margin-right: 10px;
   width: 16px;
   height: 16px;
 }
-
-.logo_place_footer {}
 
 .footer__author {
   margin: 18px 0;
