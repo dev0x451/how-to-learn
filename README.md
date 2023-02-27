@@ -1,6 +1,6 @@
 # Лонгрид "Научиться учиться"
 
-![Скриншот сайта](https://github.com/dev0x451/how-to-learn/blob/main/images/site-screenshot.png)
+![Скриншот сайта](https://github.com/dev0x451/how-to-learn/blob/main/images/site-screenshot.jpg)
 
 Это учебный проект на курсе "Веб-разработка" Яндекс.Практикум.
 В нем используются базовые и расширенные возможности HTML/CSS , а также применена методология БЭМ.
